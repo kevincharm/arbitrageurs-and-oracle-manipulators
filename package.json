@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "yarn hardhat compile",
-    "frontrun": "AUTOMINE=false yarn hardhat --network frontrun run scripts/frontrun.ts",
-    "vulnerable-price-oracle": "AUTOMINE=false yarn hardhat --network hardhat run scripts/vulnerable-price-oracle.ts",
-    "resistant-price-oracle": "AUTOMINE=false yarn hardhat --network hardhat run scripts/resistant-price-oracle.ts"
+    "test": "yarn hardhat test",
+    "compile": "yarn hardhat compile"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +15,13 @@
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^3",
     "@types/chai": "^4.2.18",
+    "@types/chai-as-promised": "^7.1.4",
     "@types/mocha": "^8.2.2",
     "@types/node": "^15.0.3",
     "@uniswap/lib": "^4.0.1-alpha",
     "abi-decoder": "^2.4.0",
     "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
     "ethereum-waffle": "^3.3.0",
     "ethers": "^5.1.4",
     "hardhat": "^2.2.1",

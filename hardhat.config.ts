@@ -18,7 +18,7 @@ const config: HardhatUserConfig = {
                 auto: process.env.AUTOMINE?.toLowerCase() === 'true',
             },
             forking: {
-                url: 'https://eth-mainnet.alchemyapi.io/v2/PVyuKzTstUnizfSwYzQ2FDhzkIWSuXrt',
+                url: 'https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
                 // blockNumber: 12490866,
             },
             accounts: {
